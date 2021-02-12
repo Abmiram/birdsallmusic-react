@@ -45,4 +45,12 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
+
+@media only screen and (max-width: 768px) {
+  .light-background {
+    background-color: rgba(250, 235, 215, 0.5);
+    width: auto;
+    border-bottom: 1px solid #6b3131;
+  }
+}
 /*# sourceMappingURL=style.css.map */
