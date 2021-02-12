@@ -38,7 +38,7 @@ body {
   background-color: antiquewhite;
 }
 
-header {
+.jumbotron {
   background-image: url("../images/providence-doucet-wPaBwop_rSo-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;

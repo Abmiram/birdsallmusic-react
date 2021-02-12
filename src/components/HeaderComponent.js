@@ -21,18 +21,16 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <header>
-                    <Jumbotron fluid>
-                        <div className="container">
-                            <div className="row text-md-left text-center">
-                                <div className="col col-md-4 light-background">
-                                    <h1>Birdsall</h1>
-                                    <h2>Music Studios</h2>
-                                </div>
+                <Jumbotron fluid>
+                    <div className="container">
+                        <div className="row text-md-left text-center">
+                            <div className="col col-md-4 light-background">
+                                <h1>Birdsall</h1>
+                                <h2>Music Studios</h2>
                             </div>
                         </div>
-                    </Jumbotron>
-                </header>
+                    </div>
+                </Jumbotron>
             </React.Fragment>
         )
     }
