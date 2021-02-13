@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, Button } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid>
+                <Jumbotron fluid className="mb-0">
                     <div className="container">
                         <div className="row text-md-left text-center">
                             <div className="col col-md-4 light-background">
@@ -31,6 +32,40 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
+                <Navbar sticky="top" expand="md" className="navbar-dark">
+                    <div className="container">
+                        <NavbarToggler onClick={this.toggleNav} />
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/home">
+                                        <i className="fa fa-home fa-lg" /> Home
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/about">
+                                        <i className="fa fa-info fa-lg" /> About
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/music">
+                                        <i className="fa fa-music fa-lg" /> Music
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/students">
+                                        <i className="fa fa-book fa-lg" /> Students
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/contact">
+                                        <i className="fa fa-address-card fa-lg" /> Contact
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </div>
+                </Navbar>
             </React.Fragment>
         )
     }

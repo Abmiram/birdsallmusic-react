@@ -34,11 +34,11 @@ function Home(props) {
                     </div>
                     <div className="col-lg-6 align-self-center pt-3 pt-lg-0">
                         <p>We are a family of experienced musicians offering digital music lessons, content, and resources.
-                    </p>
+                        </p>
                         <p>Our mission is to create an innovative digital music education platform to provide professional, positive,
                         individualized experiences for students of all ages and ability levels in an ever changing
                         world.
-                    </p>
+                        </p>
                         <p>We are proud to offer lessons and resources for violin, guitar, percussion,
                         music composition,
                         and theory.</p>

@@ -51,6 +51,10 @@ body {
   color: black;
 }
 
+.navbar {
+  background-color: #6b3131;
+}
+
 footer {
   background-color: #383838;
   padding-top: 20px;
