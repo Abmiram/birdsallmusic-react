@@ -1,0 +1,17 @@
+footer {
+    background-color: rgb(56, 56, 56);
+    padding-top: 20px;
+
+    p {
+        color: white;
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            color: white;
+            opacity: 0.7;
+        }
+    }
+}

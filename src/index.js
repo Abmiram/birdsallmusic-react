@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './scss/style.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'typeface-lobster-two';
+import 'typeface-source-sans-pro';
+import './scss/style.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -12,6 +12,8 @@
     "react-popper": "^2.2.4",
     "react-scripts": "4.0.2",
     "reactstrap": "^8.9.0",
+    "typeface-lobster-two": "^1.1.13",
+    "typeface-source-sans-pro": "^1.1.13",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
