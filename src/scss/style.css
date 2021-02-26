@@ -43,7 +43,6 @@ body {
 }
 
 .jumbotron {
-  background-image: url("../images/providence-doucet-wPaBwop_rSo-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -74,6 +73,65 @@ footer ul {
 
 footer ul li {
   margin: 0.5rem 0rem;
+}
+
+.bio-image {
+  background-repeat: no-repeat;
+  min-height: 900px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#claudia {
+  background-position: 80% 20%;
+}
+
+#bob {
+  background-position: 32% 10%;
+}
+
+#ross {
+  background-position: 95% 38%;
+}
+
+.bio-text {
+  color: white;
+  background: rgba(0, 0, 0, 0.85);
+  min-height: 900px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  #ross {
+    background-image: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #claudia {
+    background-image: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #bob {
+    background-image: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .bio-text {
+    min-height: 0;
+  }
+  .bio-image {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 @media only screen and (max-width: 768px) {

@@ -8,7 +8,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <footer>
+            <footer className="mt-4">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-2">
@@ -21,15 +21,17 @@ class Footer extends Component {
                             </ul>
                         </div>
                         <div className="col-10 text-right">
-                            <a href="tel:+7194477237">
-                                <i className="fa fa-phone" /> 1-719-447-7237
-                            </a><br />
-                            <a href="mailto:ross.birdsall9@gmail.com">
-                                <i className="fa fa-envelope-o" /> ross.birdsall9@gmail.com
-                            </a><br />
-                            <a href="https://www.linkedin.com/in/ross-birdsall-85950311b/">
-                                Website by Ross Birdsall
+                            <ul className="list-unstyled">
+                                <li><a href="tel:+7194477237">
+                                    <i className="fa fa-phone" /> 1-719-447-7237
+                            </a></li>
+                                <li><a href="mailto:ross.birdsall9@gmail.com">
+                                    <i className="fa fa-envelope-o" /> ross.birdsall9@gmail.com
+                            </a></li>
+                                <a href="https://www.linkedin.com/in/ross-birdsall-85950311b/">
+                                    Website by Ross Birdsall
                             </a>
+                            </ul>
                         </div>
                     </div>
                 </div>
