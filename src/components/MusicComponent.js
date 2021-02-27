@@ -32,7 +32,7 @@ function Music(props) {
 
     return (
         <main>
-            <div className="container">
+            <div className="container mb-5">
                 <h1 className='text-center'>Music</h1>
                 <div className='row'>
                     {musicDeck}

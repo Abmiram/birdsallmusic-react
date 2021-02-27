@@ -3,9 +3,12 @@ import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Music from './MusicComponent';
+import StudentLogin from './StudentLoginComponent';
+import StudentLinks from './StudentLinkComponent';
 import Footer from './FooterComponent';
 import { BIOS } from '../shared/bios';
 import { MUSIC } from '../shared/music';
+import { LINKS } from '../shared/links';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -15,8 +18,17 @@ class Main extends Component {
         this.state = {
             bios: BIOS,
             music: MUSIC,
-            isStudent: false,
+            links: LINKS,
+            isStudent: false
         }
+
+        this.updateStudentStatus = this.updateStudentStatus.bind(this);
+    }
+
+    updateStudentStatus() {
+        this.setState({
+            isStudent: !this.state.isStudent
+        })
     }
 
     render() {
@@ -27,7 +39,10 @@ class Main extends Component {
                     <Route path='/home' render={() => <Home />} />
                     <Route exact path='/about' render={() => <About bios={this.state.bios} /> }/>
                     <Route path='/music' render={() => <Music music={this.state.music} />} />
-                    <Route path='/students' render={() => {}} />
+                    <Route 
+                        path='/students' 
+                        render={() => !this.state.isStudent ? <StudentLogin updateStudentStatus={this.updateStudentStatus} /> : <StudentLinks links={this.state.links} />} 
+                    />
                     <Route path='/contact' render={() => {}} />
                     <Redirect to='/home' />
                 </Switch>

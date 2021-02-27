@@ -128,6 +128,10 @@ audio {
   overflow: auto;
 }
 
+.login-form {
+  max-width: 600px;
+}
+
 @media only screen and (max-width: 1454px) {
   #claudia {
     background-position: 80% 20%;
