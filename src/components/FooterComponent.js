@@ -8,7 +8,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <footer className="mt-4">
+            <footer>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-2">

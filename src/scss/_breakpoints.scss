@@ -1,3 +1,17 @@
+@media only screen and (max-width: 1454px) {
+  #claudia {
+    background-position: 80% 20%;
+  }
+  
+  #bob {
+    background-position: 38% 10%;
+  }
+  
+  #ross {
+    background-position: 85% 38%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   #ross {
     background-image: none;
@@ -16,6 +30,7 @@
 
   .bio-text {
     min-height: 0;
+    background-color: rgb(10,10,10);
   }
 
   .bio-image {

@@ -27,8 +27,8 @@ const MusicCarousel = () => <UncontrolledCarousel items={items} />;
 function Home(props) {
     return (
         <main>
-            <div className="container mt-5">
-                <Row className="pb-5">
+            <div className="container my-5">
+                <Row>
                     <div className="col-lg-6">
                         <MusicCarousel />
                     </div>

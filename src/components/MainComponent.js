@@ -11,7 +11,8 @@ class Main extends Component {
         super(props);
 
         this.state = {
-            bios: BIOS
+            bios: BIOS,
+            isStudent: false
         }
     }
 
