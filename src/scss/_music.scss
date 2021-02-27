@@ -1,0 +1,22 @@
+.music-img {
+    max-height: 290px;
+    max-width: 431px;
+    border: 1px solid darkgrey;
+}
+
+.music-card {
+    padding: 5px;
+    border: 1px solid $navbar;
+
+    .card-header, .card-footer {
+        background-color: rgb(241,243,244);
+    }
+
+    h3 {
+        font-family: "Lobster Two", cursive, serif;
+    }
+}
+
+audio {
+    width: 100%;
+}

@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
+import Music from './MusicComponent';
 import Footer from './FooterComponent';
 import { BIOS } from '../shared/bios';
-import { Switch, Route, Redirect, withRouter, } from 'react-router-dom';
+import { MUSIC } from '../shared/music';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props) {
@@ -12,7 +14,8 @@ class Main extends Component {
 
         this.state = {
             bios: BIOS,
-            isStudent: false
+            music: MUSIC,
+            isStudent: false,
         }
     }
 
@@ -23,7 +26,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' render={() => <Home />} />
                     <Route exact path='/about' render={() => <About bios={this.state.bios} /> }/>
-                    <Route path='/music' render={() => {}} />
+                    <Route path='/music' render={() => <Music music={this.state.music} />} />
                     <Route path='/students' render={() => {}} />
                     <Route path='/contact' render={() => {}} />
                     <Redirect to='/home' />

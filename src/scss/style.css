@@ -75,6 +75,29 @@ footer ul li {
   margin: 0.5rem 0rem;
 }
 
+.music-img {
+  max-height: 290px;
+  max-width: 431px;
+  border: 1px solid darkgrey;
+}
+
+.music-card {
+  padding: 5px;
+  border: 1px solid #6b3131;
+}
+
+.music-card .card-header, .music-card .card-footer {
+  background-color: #f1f3f4;
+}
+
+.music-card h3 {
+  font-family: "Lobster Two", cursive, serif;
+}
+
+audio {
+  width: 100%;
+}
+
 .bio-image {
   background-repeat: no-repeat;
   min-height: 900px;
