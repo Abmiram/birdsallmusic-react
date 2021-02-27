@@ -21,7 +21,7 @@ class StudentLogin extends Component {
         return (
             <main className="container login-form">
                 <Card className="my-5">
-                    <CardHeader>
+                    <CardHeader className="header">
                         <CardTitle>
                             <h2>Student Login</h2>
                         </CardTitle>

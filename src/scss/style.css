@@ -118,6 +118,15 @@ audio {
   background-position: 95% 38%;
 }
 
+.header {
+  background-color: #6b3131;
+  color: white;
+}
+
+.link-accordion {
+  width: 378px;
+}
+
 .bio-text {
   color: white;
   background: rgba(0, 0, 0, 0.85);
