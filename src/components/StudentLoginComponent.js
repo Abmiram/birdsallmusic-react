@@ -9,7 +9,7 @@ class StudentLogin extends Component {
     }
 
     handleLogin(event) {
-        if(this.username.value === "Student" && this.password.value === "Suzuki") {
+        if(this.username.value === "Student" && this.password.value === "Pizza") {
             this.props.updateStudentStatus();
         } else {
             alert('An incorrect username or password was entered.')
