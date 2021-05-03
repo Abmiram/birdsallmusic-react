@@ -3,6 +3,7 @@ import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Music from './MusicComponent';
+import Contact from './ContactComponent';
 import StudentLogin from './StudentLoginComponent';
 import StudentLinks from './StudentLinkComponent';
 import Footer from './FooterComponent';
@@ -43,7 +44,7 @@ class Main extends Component {
                         path='/students' 
                         render={() => !this.state.isStudent ? <StudentLogin updateStudentStatus={this.updateStudentStatus} /> : <StudentLinks links={this.state.links} />} 
                     />
-                    <Route path='/contact' render={() => {}} />
+                    <Route path='/contact' render={() => <Contact />} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />

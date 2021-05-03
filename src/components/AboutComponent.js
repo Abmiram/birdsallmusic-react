@@ -12,7 +12,7 @@ function RenderBio({ bio }) {
     return (
         <div className="container-fluid">
             <div className="row d-xl-none">
-                <img src={bio.url} className="img-fluid d-block" />
+                <img src={bio.url} alt={bio.id} className="img-fluid d-block" />
             </div>
             <div className="row">
                 {spaceBio(bio)}

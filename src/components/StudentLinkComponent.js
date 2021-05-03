@@ -11,7 +11,7 @@ function RenderAccordionTab({ linkObject }) {
             <Accordion.Collapse eventKey={linkObject.id}>
                 <Card.Body>
                     <ul>
-                        {linkObject.linkList.map(link => <li><a href={link.url} target="_blank">{link.name}</a></li>)}
+                        {linkObject.linkList.map(link => <li><a href={link.url} target="_blank" rel="noreferrer">{link.name}</a></li>)}
                     </ul>
                 </Card.Body>
             </Accordion.Collapse>
