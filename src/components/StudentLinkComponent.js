@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 
 function RenderAccordionTab({ linkObject }) {
     return (
-        <Card>
+        <Card className="hoverPointer">
             <Accordion.Toggle as={Card.Header} eventKey={linkObject.id} className='header'>
                 <h4>{linkObject.groupName}</h4>
             </Accordion.Toggle>

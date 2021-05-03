@@ -42,6 +42,10 @@ body {
   background-color: antiquewhite;
 }
 
+.hoverPointer:hover {
+  cursor: pointer;
+}
+
 .jumbotron {
   background-repeat: no-repeat;
   background-position: center center;
