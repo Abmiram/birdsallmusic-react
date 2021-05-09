@@ -42,6 +42,10 @@ body {
   background-color: antiquewhite;
 }
 
+.fullPage {
+  min-height: 41vh;
+}
+
 .hoverPointer:hover {
   cursor: pointer;
 }

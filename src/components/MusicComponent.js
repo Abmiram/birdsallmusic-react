@@ -6,7 +6,7 @@ function RenderMusicCard({ piece }) {
         <Card className="music-card col-12 col-md-10 col-lg-5 card text-center mx-auto my-3">
             <CardHeader>
             <CardImg src={piece.imgUrl} alt={piece.name} className='music-img' />
-                <CardTitle>
+                <CardTitle className="mt-3">
                     <h3>{piece.name}</h3>
                 </CardTitle>
                 <audio controls src={piece.audioUrl} />

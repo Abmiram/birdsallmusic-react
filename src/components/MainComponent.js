@@ -22,14 +22,6 @@ class Main extends Component {
             links: LINKS,
             isStudent: false
         }
-
-        this.updateStudentStatus = this.updateStudentStatus.bind(this);
-    }
-
-    updateStudentStatus() {
-        this.setState({
-            isStudent: !this.state.isStudent
-        })
     }
 
     render() {
@@ -42,7 +34,7 @@ class Main extends Component {
                     <Route path='/music' render={() => <Music music={this.state.music} />} />
                     <Route 
                         path='/students' 
-                        render={() => !this.state.isStudent ? <StudentLogin updateStudentStatus={this.updateStudentStatus} /> : <StudentLinks links={this.state.links} />} 
+                        render={() => !this.state.isStudent ? <StudentLogin /> : <StudentLinks links={this.state.links} />} 
                     />
                     <Route path='/contact' render={() => <Contact />} />
                     <Redirect to='/home' />
