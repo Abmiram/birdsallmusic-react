@@ -20,7 +20,8 @@ class Main extends Component {
             bios: BIOS,
             music: MUSIC,
             links: LINKS,
-            isStudent: false
+            isStudent: false,
+            isAdmin: false,
         }
     }
 
@@ -34,7 +35,7 @@ class Main extends Component {
                     <Route path='/music' render={() => <Music music={this.state.music} />} />
                     <Route 
                         path='/students' 
-                        render={() => !this.state.isStudent ? <StudentLogin /> : <StudentLinks links={this.state.links} />} 
+                        render={() => !this.state.isStudent ? <StudentLogin /> : <StudentLinks links={this.state.links} admin={this.state.isAdmin} />} 
                     />
                     <Route path='/contact' render={() => <Contact />} />
                     <Redirect to='/home' />

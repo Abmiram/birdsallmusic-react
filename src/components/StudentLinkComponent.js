@@ -1,6 +1,8 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom';
+import LinkForm from './LinkFormComponent';
 
 function RenderAccordionTab({ linkObject }) {
     return (
@@ -30,6 +32,7 @@ function StudentLinks(props) {
     return (
         <main className="container my-5">
             <div className="row">
+                {this.props.isAdmin ? <LinkForm /> : <div />}
                 <Accordion className="link-accordion">
                     {accordionCards}
                 </Accordion>
