@@ -18,7 +18,7 @@ class StudentLogin extends Component {
             </main>
         )
     }
-}
+};
 
 
 export default StudentLogin;

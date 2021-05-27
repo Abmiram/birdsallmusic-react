@@ -1,7 +1,6 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
-import { Link } from 'react-router-dom';
 import LinkForm from './LinkFormComponent';
 
 function RenderAccordionTab({ linkObject }) {
