@@ -25,7 +25,19 @@ class Main extends Component {
         }
     }
 
+    fetchViolinLinks = () => {
+        fetch(url + 'violinlinks')
+        .then(response => response.json())
+        .then(result => {
+            this.setState({links: result})
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    }
+
     render() {
+        this.fetchViolinLinks();
         return (
             <div>
                 <Header />
