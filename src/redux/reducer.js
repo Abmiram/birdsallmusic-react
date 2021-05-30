@@ -5,7 +5,9 @@ import { MUSIC } from '../shared/music';
 export const initialState = {
     links: LINKS,
     bios: BIOS,
-    music: MUSIC
+    music: MUSIC,
+    isStudent: false,
+    isAdmin: false
 };
 
 export const Reducer = (state = initialState, action) => {

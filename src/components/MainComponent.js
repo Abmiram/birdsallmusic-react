@@ -19,17 +19,6 @@ const mapStateToProps = state => {
 };
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            bios: BIOS,
-            music: MUSIC,
-            links: LINKS,
-            isStudent: false,
-            isAdmin: false,
-        }
-    }
 
     fetchViolinLinks = () => {
         fetch(url + 'violinlinks')
@@ -49,11 +38,11 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path='/home' render={() => <Home />} />
-                    <Route exact path='/about' render={() => <About bios={this.state.bios} /> }/>
-                    <Route path='/music' render={() => <Music music={this.state.music} />} />
+                    <Route exact path='/about' render={() => <About bios={this.props.bios} /> }/>
+                    <Route path='/music' render={() => <Music music={this.props.music} />} />
                     <Route 
                         path='/students' 
-                        render={() => !this.state.isStudent ? <StudentLogin /> : <StudentLinks links={this.state.links} admin={this.state.isAdmin} />} 
+                        render={() => !this.props.isStudent ? <StudentLogin /> : <StudentLinks links={this.props.links} admin={this.props.isAdmin} />} 
                     />
                     <Route path='/contact' render={() => <Contact />} />
                     <Redirect to='/home' />
