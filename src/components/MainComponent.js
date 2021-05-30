@@ -7,10 +7,16 @@ import Contact from './ContactComponent';
 import StudentLogin from './StudentLoginComponent';
 import StudentLinks from './StudentLinkComponent';
 import Footer from './FooterComponent';
-import { BIOS } from '../shared/bios';
-import { MUSIC } from '../shared/music';
-import { LINKS } from '../shared/links';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+    return {
+        links: state.links,
+        bios: state.bios,
+        music: state.music
+    };
+};
 
 class Main extends Component {
     constructor(props) {
@@ -58,4 +64,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));
